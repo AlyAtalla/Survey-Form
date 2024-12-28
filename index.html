@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We value your feedback. Please fill out the form below to help us improve!</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" placeholder="Enter your age" min="1" max="120" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">What is your role?</label>
+                <select id="dropdown" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What is your favorite programming language?</p>
+                <label><input type="radio" name="language" value="javascript" required> JavaScript</label>
+                <label><input type="radio" name="language" value="python"> Python</label>
+            </div>
+
+            <div class="form-group">
+                <p>Select your hobbies:</p>
+                <label><input type="checkbox" name="hobby" value="music"> Music</label>
+                <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional comments:</label>
+                <textarea id="comments" placeholder="Enter your comments here"></textarea>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
